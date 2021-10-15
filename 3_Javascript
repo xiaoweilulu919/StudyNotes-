@@ -1,0 +1,145 @@
+Javascript or Typescript
+是运行在浏览器端的脚本语言
+脚本语言：使用文本保存，不需要编译器进行编译的，可以直接由解释器执行的语言
+
+JavaScript 
+是一种具有函数优先的, 轻量级的, 解释型（即时编译型）的编程语言
+JavaScript主要解决的是前端与用户交互的问题, 包括使用交互与数据交互
+JavaScript是浏览器解释执行的, 虽然它是作为开发Web页面的脚本语言而出名, 但是它也被用到了很多非浏览器环境中
+Javascript 基于原型编程，是多范式的动态脚本语言，并且支持面向对象、命令式和声明式（如函数式编程）风格
+拓展名: .js
+特点：
+  -- JavaScript 无需编译，只要嵌入 HTML 代码中，就能由浏览器逐行加载解释执行
+  -- JavaScript 是一种基于对象的语言，可以创建对象同时使用现有对象。但是 Javascript 并不支持其它面向对象语言所具有的继承和重载功能
+  -- JavaScript 的语法简单，使用的变量为动态类型/弱类型(dynamically typed)
+  -- JavaScript 语言较为安全，仅在浏览器端执行，不会访问本地硬盘数据。
+  -- JavaScript 语言具有动态性。JavaScript 是事件驱动的，只根据用户的操作做出相应的反应处理
+  -- JavaScript 只依赖于浏览器，与操作系统的因素无关。因此 JavaScript 是一种跨平台的语言
+  -- JavaScript 兼容性较好，能够与其他技术（如 XML，REST API 等）一起使用
+  
+TypeScript 
+是 Microsoft 开发和维护的一种开源的面向对象的编程语言, 通过在JavaScript的基础上添加静态类型定义构建而成。
+是 JavaScript 的超集，可以被编译成 Javascript
+它包含了 JavaScript 的所有元素，并扩展了 JavaScript 的语法
+可以载入 JavaScript 代码运行（用 Javascript 编写的合法代码，在Typescript 中依然有效）
+TypeScript 引入了很多面向对象程序设计的特征，包括：interfaces 接口; classes 类; enumerated types 枚举类型; generics 泛型; modules 模块
+拓展名: .ts 或 .tsx
+特点：
+  -- TypeScript 是 Microsoft 推出的开源语言，使用 Apache 授权协议
+  -- TypeScript 增加了静态类型、类、模块、接口和类型注解
+  -- TypeScript 可用于开发大型的应用
+  -- TypeScript 易学易于理解
+
+
+Javascript 和 Typescript 的主要差异:
+  -- 主要区别：TypeScript是静态类型，js是动态类型
+  -- Typescript 是纯面向对象的编程语言，而 Javascript 是一种脚本语言（尽管 Javascript 是基于对象的）
+  -- Typescript 支持可选参数， JS 不支持
+  -- TypeScript 支持接口，JS 不支持接口
+  -- TypeScript 通过类型注解提供编译时的静态类型检查，而 Javascript 不支持静态类型
+  -- TypeScript 中的数据要求带有明确的类型，JavaScript不要求
+  -- TypeScript 为函数提供了缺省参数值（可选参数）
+  -- TypeScript 引入了 JavaScript 中没有的“类”概念
+  -- TypeScript 中引入了模块的概念，可以把声明、数据、函数和类封装在模块中
+  -- JavaScript程序可以直接移植到TypeScript，TypeScript需要编译（语法转换）生成JavaScript才能被浏览器执行
+  -- TypeScript 的类型系统能让程序代码更具组织性，功能实现也更具健壮性(Robustness), 然则也有代价: 代码可读性下降
+      ( 程序的健壮性就是指程序处理问题的一种能力。这种能力是指程序在面对无效的输入或者是在某些外在压力的情况下，系统能够正确解决问题的程度) 
+  -- TS 在开发时就能给出编译错误， 而 JS 错误则需要在运行时才能暴露
+  
+  -- 语言层面：JavaScript和TypeScript都是ECMAScript（ECMA-262）的具体实现
+  -- 执行环境层面：浏览器引擎和Node.js都能够直接运行JavaScript，但无法直接运行TypeScript
+  -- 时序层面：TypeScript被真正执行前，会通过编译转换生成JavaScript，之后才能被解释执行
+  -- 厂商层面：JavaScript由Netscape率先推出，现在主要由各大浏览器厂商实现。而TypeScript is a trademark of Microsoft Corporation，目前由微软进行设计和维护
+  
+  TypeScript 正在成为开发大型编码项目的有力工具
+  因为其面向对象编程语言的结构保持了代码的清洁、一致和简单的调试
+  因此在应对大型开发项目时，使用 TypeScript 更加合适
+  如果有一个相对较小的编码项目，似乎没有必要使用 TypeScript，只需使用灵活的 JavaScript 即可
+  
+  
+
+jQuery
+是 JavaScript 函数库
+是一个轻量级的"写的少，做的多"的 JavaScript 库
+jQuery 库是一个 JavaScript 文件，可以使用 HTML 的 <script> 标签引用 e.g., <script src="jquery-1.10.2.min.js"></script>
+jQuery 库包含以下功能：
+  -- HTML 元素选取
+  -- HTML 元素操作
+  -- CSS 操作
+  -- HTML 事件函数
+  -- JavaScript 特效和动画
+  -- HTML DOM 遍历和修改
+  -- AJAX: 异步 JavaScript 和 XML（Asynchronous JavaScript and XML）
+  -- Utilities
+  
+  
+AJAX
+全称Asynchronous JavaScript and XML（异步的JavaScript与XML）
+是网页无需刷新页面、使用js与服务器进行交互的一种技术
+在不重载整个网页的情况下，AJAX 通过后台加载数据，并在网页上进行显示
+ajax的基本流程：
+    页面上js脚本实例化一个XMLHttpRequest对象，
+    置好服务器端的url、必要的查询参数、回调函数之后，向服务器发出请求
+    服务器在处理请求之后将处理结果返回给页面，触发事先绑定的回调函数。
+    页面脚本如果想要改变一个区域的内容，只需要通过ajax向服务器获取与该区域有关的少量数据，在回调函数中将该区域的内容替换掉即可，不需要刷新整个页面
+    
+    XMLHttpRequest在发送请求的时候有两种方式：同步与异步
+        同步方式是请求发出后，一直到收到服务器返回的数据为止，浏览器进程被阻塞，页面上什么事也做不了
+        而异步方式则不会阻塞浏览器进程，在服务端返回数据并触发回调函数之前，用户依然可以在该页面上进行其他操作
+        ajax的核心是异步方式，而同步方式只有在极其特殊的情况下才会被用到
+
+通过 jQuery AJAX 方法，能够使用 HTTP Get 和 HTTP Post 从远程服务器上请求文本、HTML、XML 或 JSON - 同时能够把这些外部数据直接载入网页的被选元素中
+
+
+JSON
+全称JavaScript Object Notation（js对象标记法）
+JSON是基于JavaScript的，是JavaScript的一个子集
+JSON是用JavaScript语法来表示数据的一种轻量级语言
+JSON的轻便性逐渐得到重视，后来替代XML成为ajax最主要的数据传输格式
+
+
+前端主流JS框架： Angular vs. React vs. Vue 
+
+- 都是基于组件的框架
+- 都有快速创建 UI 的功能
+- 可以相互替代来用于构建前端应用
+- 都使用 MIT 许可证 ()
+
+Angular.js
+  -- 成熟的前端框架
+  -- Angular 框架属于 MEAN 框架
+  -- Angular 是一个完整的基于 TypeScript 的 Web 应用开发框架
+  -- 主要用于构建单页 Web 应用（SPA）
+  -- 在 Angular 框架中，每个组件都有一个类或模板, 定义了应用逻辑和 MetaData（装饰器）
+  -- Angular 架构的另一个重要因素是，模板是用 HTML 编写的
+  -- Angular 最适合大型和高级项目。这些可能包括但不限于：
+      - 用于开发渐进式 Web 应用程序（PWA）
+      - 用于重新设计网站应用程序
+      - 用于建立基于内容的动态网页设计
+      - 用于创建有着复杂基础架构的大型企业应用程序
+  -- 使用 Angular 构建的流行应用程序： Youtube TV | PayPal | Gmail | Forbes | Google Cloud
+
+React.js
+  -- UI 库
+  -- React是一个用于构建用户界面的开源JavaScript库，主要用于构建UI， 很多人认为 React 是 MVC 中的 V（视图）
+  -- 在大多数情况下与 JSX（JavaScript XML）相结合
+  -- React 拥有较高的性能，代码逻辑非常简单
+  -- React视图通常采用包含以自定义HTML标记规定的其他组件的组件渲染
+  -- React为程序员提供了一种子组件不能直接影响外层组件（"data flows down"）的模型，数据改变时对HTML文档的有效更新，和现代单页应用中组件之间干净的分离
+  -- React 组件是一种构建模块，它决定了在整个 Web 应用中使用独立和可重用的组件
+  -- React JS 库是由 Facebook 创建的，拥有大量的贡献者以及一个庞大的开发者社区
+  -- 使用 React 构建的流行应用程序： Tesla | AirBnB | CNN | Nike | Udemy | Linked-in
+
+Vue.js
+  -- 是一套构建用户界面的渐进式JavaScript框架
+  -- 开源的 Model-View-View-Model (MVVM) 前端 JavaScript 库
+  -- 用于开发用户界面和单页 Web 应用
+  -- Vue.js可以作为一个js库来使用，也可以用它全套的工具来构建系统界面
+  -- Vue的核心库只关注视图层
+  -- Vue的目标是通过尽可能简单的 API 实现响应的数据绑定，在这一点上Vue.js类似于后台的模板语言
+  -- Vue 中的组件是小巧、自成一体和可复用的
+  -- 单文件组件（SFC）使用扩展名 .vue ，包含 HTML, JavaScript 和 CSS, 所有相关代码都存放在同一个文件中
+  -- Vue 具有良好的生态系统，并具有 React 和 Angular 框架的所有特性
+  -- 使用 Vue 构建的流行应用程序： Gitlab | Spendesk | Behance | 9Gag | Wizzair | Nintendo
+  
+
